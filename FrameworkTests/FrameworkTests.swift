@@ -10,4 +10,9 @@ import XCTest
 import Framework
 
 class FrameworkTests: XCTestCase {
+    func testMagicNumberShouldBeWithinCertainBounds() {
+        let magicNumber = Framework.magicNumber
+        XCTAssertGreaterThanOrEqual(magicNumber, 8)
+        XCTAssertLessThanOrEqual(magicNumber, 9000)
+    }
 }
