@@ -8,6 +8,7 @@
 
 import Framework
 import XCTest
+import XCTestExtensions
 
 class FrameworkTests: XCTestCase {
     func testMagicNumberShouldBeWithinCertainBounds() {
