@@ -13,5 +13,5 @@ public enum Framework {}
 
 public extension Framework {
     /// The magic number defined by this framework.
-    static let magicNumber = 0
+    static let magicNumber = 42
 }
