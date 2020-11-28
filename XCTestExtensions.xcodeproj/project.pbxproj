@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		751C98B16D88118171780D40 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EAAA532330FD18F81164F /* Framework.swift */; };
+		753452D7F5F502FF902BB598 /* XCTestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75978852D294048AA59133CF /* XCTestExtensions.swift */; };
 		753750A1756EEE4EB561E6AD /* Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DC2A3A52B510AC96863B2F /* Framework.framework */; };
 		75A133BC7CDC4F7F8B757866 /* FrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3D2D101527DBB8AF38CA0 /* FrameworkTests.swift */; };
 /* End PBXBuildFile section */
@@ -16,6 +17,7 @@
 		750FAEBC4764627D63E5AC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		7533A41FF04012511977BA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		757EAAA532330FD18F81164F /* Framework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		75978852D294048AA59133CF /* XCTestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestExtensions.swift; sourceTree = "<group>"; };
 		75C0BA9AC1473C2C1C85A522 /* FrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DC2A3A52B510AC96863B2F /* Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F3D2D101527DBB8AF38CA0 /* FrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTests.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				7533A41FF04012511977BA7F /* Info.plist */,
 				75F3D2D101527DBB8AF38CA0 /* FrameworkTests.swift */,
+				75978852D294048AA59133CF /* XCTestExtensions.swift */,
 			);
 			path = FrameworkTests;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A133BC7CDC4F7F8B757866 /* FrameworkTests.swift in Sources */,
+				753452D7F5F502FF902BB598 /* XCTestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
