@@ -15,4 +15,9 @@ class FrameworkTests: XCTestCase {
         let magicNumber = Framework.magicNumber
         XCTAssertWithinBounds(magicNumber, 8...9000, "The magic number should really be within the specified bounds to work")
     }
+
+    func testMagicStringShouldHaveMinimalLength() throws {
+        let magicString = try XCTUnwrap(Framework.magicString)
+        XCTAssertGreaterThanOrEqual(magicString.count, 3)
+    }
 }
