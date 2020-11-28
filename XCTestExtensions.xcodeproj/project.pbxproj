@@ -14,6 +14,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		146EC5512572DDFC00897F91 /* XCTestExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCTestExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		146EC5542572DDFC00897F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		750FAEBC4764627D63E5AC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		7533A41FF04012511977BA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		757EAAA532330FD18F81164F /* Framework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
@@ -24,6 +26,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		146EC54E2572DDFC00897F91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		756706D29E20EF40ED29DD65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,11 +51,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		146EC5522572DDFC00897F91 /* XCTestExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				146EC5542572DDFC00897F91 /* Info.plist */,
+			);
+			path = XCTestExtensions;
+			sourceTree = "<group>";
+		};
 		7529A5A1CA63E2D88EA38A85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				75DC2A3A52B510AC96863B2F /* Framework.framework */,
 				75C0BA9AC1473C2C1C85A522 /* FrameworkTests.xctest */,
+				146EC5512572DDFC00897F91 /* XCTestExtensions.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +85,7 @@
 				7529A5A1CA63E2D88EA38A85 /* Products */,
 				75E6601AE7FE3CD14B9062B4 /* Framework */,
 				752FB92D2DA523FBF1C20900 /* FrameworkTests */,
+				146EC5522572DDFC00897F91 /* XCTestExtensions */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +101,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		146EC54C2572DDFC00897F91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7515C2E7C3FEDA6E4CEF681C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,6 +118,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		146EC5502572DDFC00897F91 /* XCTestExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 146EC5582572DDFC00897F91 /* Build configuration list for PBXNativeTarget "XCTestExtensions" */;
+			buildPhases = (
+				146EC54C2572DDFC00897F91 /* Headers */,
+				146EC54D2572DDFC00897F91 /* Sources */,
+				146EC54E2572DDFC00897F91 /* Frameworks */,
+				146EC54F2572DDFC00897F91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCTestExtensions;
+			productName = XCTestExtensions;
+			productReference = 146EC5512572DDFC00897F91 /* XCTestExtensions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		755D9FEE8D95C09C4EA991AF /* Framework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7510D0EEF9F05C5C3D025A18 /* Build configuration list for PBXNativeTarget "Framework" */;
@@ -134,6 +178,12 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = yes;
+				TargetAttributes = {
+					146EC5502572DDFC00897F91 = {
+						CreatedOnToolsVersion = 11.3.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 75E5623C31E762A67678122E /* Build configuration list for PBXProject "XCTestExtensions" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -150,11 +200,19 @@
 			targets = (
 				755D9FEE8D95C09C4EA991AF /* Framework */,
 				759C746597C60ECDED18D4CE /* FrameworkTests */,
+				146EC5502572DDFC00897F91 /* XCTestExtensions */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		146EC54F2572DDFC00897F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7516DCAEEA574DF78DFB3033 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +230,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		146EC54D2572DDFC00897F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75B68B0BA8BFE2E704A10402 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +257,44 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		146EC5562572DDFC00897F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = XCTestExtensions/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yes.XCTestExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		146EC5572572DDFC00897F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = XCTestExtensions/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yes.XCTestExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		7503CF2F6717BD5F9FAACF58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -373,6 +476,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		146EC5582572DDFC00897F91 /* Build configuration list for PBXNativeTarget "XCTestExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				146EC5562572DDFC00897F91 /* Debug */,
+				146EC5572572DDFC00897F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7510D0EEF9F05C5C3D025A18 /* Build configuration list for PBXNativeTarget "Framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
