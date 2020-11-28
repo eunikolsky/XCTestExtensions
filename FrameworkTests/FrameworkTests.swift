@@ -9,10 +9,15 @@
 import XCTest
 import Framework
 
+/// Asserts that `x` is within the given `bounds`.
+func XCTAssertWithinBounds <T: Comparable> (_ x: T, _ bounds: ClosedRange<T>, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
+    XCTAssertGreaterThanOrEqual(x, bounds.lowerBound, message(), file: file, line: line)
+    XCTAssertLessThanOrEqual(x, bounds.upperBound, message(), file: file, line: line)
+}
+
 class FrameworkTests: XCTestCase {
     func testMagicNumberShouldBeWithinCertainBounds() {
         let magicNumber = Framework.magicNumber
-        XCTAssertGreaterThanOrEqual(magicNumber, 8)
-        XCTAssertLessThanOrEqual(magicNumber, 9000)
+        XCTAssertWithinBounds(magicNumber, 8...9000, "The magic number should really be within the specified bounds to work")
     }
 }
