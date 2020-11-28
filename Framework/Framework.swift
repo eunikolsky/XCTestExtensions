@@ -16,5 +16,5 @@ public extension Framework {
     static let magicNumber = 42
 
     /// A magic string that is calculated by this framework.
-    static let magicString: String? = nil
+    static let magicString: String? = "foobar"
 }
