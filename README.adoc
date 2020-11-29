@@ -1,0 +1,3 @@
+= `XCTestExtensions` sample project
+
+This project shows how to setup a framework in Xcode for shared `XCTest` assertions and helpers. Please look here for more information: https://egeek.me/2020/11/29/creating-an-xctest-extensions-target/.
